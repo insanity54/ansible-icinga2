@@ -121,13 +121,13 @@
   register: icinga2_web_token_st
 
 - name: getting token (create)
-  command: icingacli setup token create
+  command: icinga2 setup token create
   register: icingaweb2_web_token_create
   when: icinga2_web_token_st.stat.exists == False
 
 - name: getting token (read)
   tags: read-token
-  command: icingacli setup token show
+  command: icinga2 setup token show
   register: icingaweb2_web_token_read
   when: icinga2_web_token_st.stat.exists == True
 
