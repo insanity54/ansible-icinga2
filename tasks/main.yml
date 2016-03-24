@@ -20,8 +20,10 @@
     - php5-gd
     - php5-mysql
     - php5-pgsql
+    - php5-cli
     - icingaweb2
     - icinga2
+    - icingacli
     - mysql-client
     - python-mysqldb
     - icinga2-ido-mysql
